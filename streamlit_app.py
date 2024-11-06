@@ -27,13 +27,13 @@ st.write(df.describe())
 
 # st.write("A graph")
 
-# # Plot relationship
-# plt.figure(figsize=(8,4))
-# categories = df["TARGET"].unique()
-# values = df_train["TARGET"].value_counts()
-# plt.bar(categories, values)
-# plt.title('TARGET variable distribution')
-# plt.xlabel('Values')
-# plt.ylabel("Count")
-# plt.xticks(categories)
-# plt.show()
+# Imagina que quieres dibujar un diagrama de líneas de dos columnas específicas: 'year' y 'quality' 
+plt.figure(figsize=(10, 6)) 
+# Dibuja el diagrama de líneas 
+plt.plot(df['year'], df['quality'], marker='o', linestyle='-') 
+# Añade etiquetas y título 
+plt.xlabel('Year') 
+plt.ylabel('Quality') 
+plt.title('Wine Quality Over Years') 
+# Muestra el gráfico 
+plt.show()
