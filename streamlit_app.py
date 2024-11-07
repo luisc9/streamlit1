@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.datasets import load_wine
 import matplotlib.pyplot as plt
+import numpy as np
 
 # data = load_iris(as_frame=True)
 data = load_wine(as_frame=True)
