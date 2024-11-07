@@ -25,15 +25,14 @@ st.write("Let's see the description")
 st.write(df.describe())
 
 
-# st.write("A graph")
+st.write("A graph")
 
-# Imagina que quieres dibujar un diagrama de líneas de dos columnas específicas: 'year' y 'quality' 
 plt.figure(figsize=(10, 6)) 
-# Dibuja el diagrama de líneas 
-plt.plot(df['year'], df['quality'], marker='o', linestyle='-') 
-# Añade etiquetas y título 
-plt.xlabel('Year') 
-plt.ylabel('Quality') 
-plt.title('Wine Quality Over Years') 
-# Muestra el gráfico 
+# Graficar los valores de la columna 'alcohol' 
+plt.plot(df.index, df['alcohol'], marker='o', linestyle='-', color='b') 
+# Añadir etiquetas y título 
+plt.xlabel('Índice') 
+plt.ylabel('Alcohol') 
+plt.title('Valores de Alcohol en el Dataset de Vino')
+
 plt.show()
