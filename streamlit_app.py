@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.datasets import load_wine
-import matplotlib 
-matplotlib.use('TkAgg') # Cambia 'TkAgg' a otro backend si prefieres
+# import matplotlib 
+# matplotlib.use('TkAgg') # Cambia 'TkAgg' a otro backend si prefieres
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -38,4 +38,4 @@ plt.xlabel('Índice')
 plt.ylabel('Alcohol') 
 plt.title('Valores de Alcohol en el Dataset de Vino')
 
-plt.show()
+st.pyplot(plt)
